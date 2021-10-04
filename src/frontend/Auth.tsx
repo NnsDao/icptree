@@ -52,7 +52,7 @@ function Auth() {
     <div className="auth-section w-1/2 truncate">
 
       {!signedIn && client ? (
-        <button onClick={signIn} className="auth-button">
+        <button onClick={signIn} className="auth-button bg-gray-900">
           Sign in
           <img style={{ width: "33px", marginRight: "-1em", marginLeft: "0.7em" }} src={dfinityLogo} />
         </button>

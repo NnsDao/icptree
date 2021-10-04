@@ -1,7 +1,7 @@
 module.exports = {
   purge: [
-    './src/**/*.html',
-    './src/**/*.js',
+    "./index.html", 
+    "./src/**/*.{js,ts,jsx,tsx}"
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -16,7 +16,9 @@ module.exports = {
      })
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ["motion-safe"],
+    },
   },
   plugins: [],
 }
