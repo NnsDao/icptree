@@ -49,7 +49,7 @@ function Auth() {
   }, [])
 
   return (
-    <div className="auth-section">
+    <div className="auth-section w-1/2 truncate">
 
       {!signedIn && client ? (
         <button onClick={signIn} className="auth-button">
@@ -60,8 +60,8 @@ function Auth() {
 
       {signedIn ? (
         <>
-          <p>Signed in as: {principal}</p>
-          <button onClick={signOut} className="auth-button">Sign out</button>
+          {/* <p className="">Signed in as: {principal}</p> */}
+          <button onClick={signOut} className="auth-button bg-gray-900">Sign out</button>
         </>
       ) : null}
 
