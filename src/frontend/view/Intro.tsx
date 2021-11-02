@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react"
-import { Footer } from "./Footer"
-import Card  from "./Card"
+import { Footer } from "../component/Footer"
+import Card  from "../component/Card"
+import { Auth } from "../component/Auth"
 // import { counter } from "canisters/counter"
-import logo from "./assets/nnsdao-logo-1024.png"
+import logo from "../assets/nnsdao-logo-1024.png"
 
 export function Intro() {
   // const [count, setCount] = useState<string>()
